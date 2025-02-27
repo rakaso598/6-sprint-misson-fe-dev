@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { getProductList } from "../services/ProductService.js";
 
-export const ProductApi = () => {
+export const ProductApi = (orderBy) => {
   const [productList, setProductList] = useState(null);
 
-  useEffect(() => {
+  useEffect((orderBy) => {
     const fetchProductList = async () => {
       try {
-        const productListResponse = await getProductList(1, 10, undefined);
+        const productListResponse = await getProductList(1, 10, orderBy, undefined);
         setProductList(productListResponse);
       } catch (err) {
         console.error(err);
@@ -15,7 +15,7 @@ export const ProductApi = () => {
     };
 
     fetchProductList();
-  }, []);
+  }, [orderBy]);
 
   if (!productList || !productList.list) {
     return <div>No products found.</div>;

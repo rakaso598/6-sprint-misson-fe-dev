@@ -1,10 +1,10 @@
-import { ProductApi } from "./components/productApi"
+import { ProductApi } from "./components/ProductApi.jsx"
 
 function App() {
 
   return (
     <>
-      <ProductApi />
+      <ProductApi orderBy='favorite' />
     </>
   )
 }
