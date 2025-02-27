@@ -1,10 +1,10 @@
+import { ProductApi } from "./components/productApi"
+
 function App() {
 
   return (
     <>
-      <div>
-        ttttttttttttttt
-      </div>
+      <ProductApi />
     </>
   )
 }
