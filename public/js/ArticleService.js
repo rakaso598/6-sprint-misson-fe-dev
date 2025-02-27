@@ -54,7 +54,7 @@ const createArticle = async (createArticleData) => {
 };
 
 // 게시글삭제
-const deleteArticle = async (articleId, patchArticleData) => {
+const deleteArticle = async (articleId) => {
   try {
     const res = await axios.delete(
       `https://panda-market-api-crud.vercel.app/articles/${articleId}`
