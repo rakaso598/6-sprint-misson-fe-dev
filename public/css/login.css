@@ -1,0 +1,149 @@
+@import "./reset.css";
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  /* 색상 변수 */
+  --focus-color: #3692FF;
+  --input-bg-color: #f3f4f6;
+  --btn-color: #9Ca3af;
+  --sns-bg-color: #e6f2ff;
+}
+
+.xl-20px-semibold {
+  font-family: 'Pretendard-Regular', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.xl-16px-semibold {
+  font-family: 'Pretendard-Regular', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.xl-20px-bold {
+  font-family: 'Pretendard-Regular', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+input::placeholder {
+  font-family: 'Pretendard-Regular', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#wrapper {
+  margin: 0 auto;
+}
+
+input:focus {
+  outline: 2px solid var(--focus-color);
+}
+
+#input-email {
+  width: 592px;
+  height: 26px;
+  border-radius: 12px;
+  padding: 16px 24px;
+  background-color: var(--input-bg-color);
+  border: 1px solid #ffffff00;
+}
+
+#input-pw {
+  width: 592px;
+  height: 26px;
+  border-radius: 12px;
+  padding: 16px 24px;
+  background-color: var(--input-bg-color);
+  border: 1px solid #ffffff00;
+}
+
+#btn-submit {
+  width: 640px;
+  height: 56px;
+  border-radius: 40px;
+  padding: 16px 124px;
+  background-color: var(--btn-color);
+  border: none;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.sns--body__background {
+  display: flex;
+  align-items: center;
+  background-color: var(--sns-bg-color);
+  padding: 16px 23px;
+  border-radius: 8px;
+  width: 594px;
+  height: 42px;
+  justify-content: space-between;
+}
+
+.signup--body {
+  display: flex;
+  align-items: center;
+}
+
+#logo-wrap {
+  margin-bottom: 20px;
+}
+
+#logo-href {
+  cursor: pointer;
+}
+
+#email--title {
+  margin-bottom: 20px;
+}
+
+#email--body {
+  margin-bottom: 30px;
+}
+
+#email-error {
+  margin-top: 10px;
+}
+
+#pw--title {
+  margin-bottom: 20px;
+}
+
+#pw--body {
+  margin-bottom: 30px;
+}
+
+#pw-error {
+  margin-top: 10px;
+}
+
+#btn-submit {
+  cursor: pointer;
+  background-color: #3691FF;
+}
+
+#login-span-style {
+  color: white;
+}
+
+#sns-google-style {
+  cursor: pointer;
+}
+
+#sns-kakao-style {
+  cursor: pointer;
+}

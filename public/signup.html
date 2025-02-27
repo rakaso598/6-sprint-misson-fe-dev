@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/signup.css">
+  <title>회원가입</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="login-container">
+      <div id="logo-wrap" class="logo-wrap">
+        <div class="logo--body">
+          <a href="/" id="logo-href-style">
+            <img src="./img/step_two/logo.png" alt="로고">
+          </a>
+        </div>
+      </div>
+      <form action="/login" method="get">
+        <div class="email-wrap">
+          <div id="email--title" class="email--title">
+            <span class="xl-20px-bold">이메일</span>
+          </div>
+          <div class="email--body">
+            <input id="input-email" type="email" name="email" placeholder="이메일을 입력해주세요"><br>
+          </div>
+        </div>
+        <div class="nickname-wrap">
+          <div id="nickname--title" class="nickname--title">
+            <span class="xl-20px-bold">닉네임</span>
+          </div>
+          <div class="nickname--body">
+            <input id="input-nickname" type="nickname" name="nickname" placeholder="닉네임을 입력해주세요"><br>
+          </div>
+        </div>
+        <div class="pw-wrap">
+          <div id="pw--title" class="pw--title">
+            <span class="xl-20px-bold">비밀번호</span>
+          </div>
+          <div class="pw--body">
+            <input id="input-pw" type="password" name="pw" placeholder="비밀번호를 입력해주세요"><br>
+          </div>
+        </div>
+        <div class="pw-repeat-wrap">
+          <div id="pw-repeat--title" class="pw-repeat--title">
+            <span class="xl-20px-bold">비밀번호 확인</span>
+          </div>
+          <div class="pw-repeat--body">
+            <input id="input-pw-repeat" type="password" name="pw-repeat" placeholder="비밀번호를 다시 한 번 입력해주세요"><br>
+          </div>
+        </div>
+        <div class="login-wrap">
+          <div class="login--body">
+            <button id="btn-submit" type="submit">
+              <span id="login-wrap-span-style" class="xl-20px-semibold">회원가입</span>
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="sns-wrap">
+        <div class="sns--body">
+          <div class="sns--body__background">
+            <div class="sns--body__text">
+              <div><span class="xl-16px-semibold">간편 로그인하기</span></div>
+            </div>
+            <div class="sns--body__btn">
+              <a id="sns-google-style" href="https://www.google.com/" target="_blank">
+                <img src="./img/step_two/ico_google.png" alt="구글"></a>
+              <a id="sns-kakao-style" href="https://www.kakaocorp.com/page/" target="_blank">
+                <img src="./img/step_two/ico_kakao.png" alt="카카오"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="signup-wrap">
+        <div class="signup--body">
+          <div class="signup--body__text">
+            <div><span class="xl-20px-semibold">이미 회원이신가요?</span></div>
+          </div>
+          <div class="signup--body__btn">
+            <div><a href="/login" class="xl-20px-semibold">로그인</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/signup.js"></script>
+</body>
+
+</html>

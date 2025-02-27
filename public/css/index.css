@@ -1,0 +1,86 @@
+@import "./reset.css";
+
+#wrapper {
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.gnb {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 10;
+  background-color: #FFFFFF;
+}
+
+.gnb--item__left {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.gnb--item__right {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.header {
+  display: flex;
+  height: 540px;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.header--background {
+  position: absolute;
+  width: 100%;
+  height: 100%;  
+  background-color: #CFE5FF;
+}
+
+.header--content {
+  position: relative;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom {
+  display: flex;
+  height: 540px;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.bottom--background {
+  position: absolute;
+  width: 100%;
+  height: 100%;  
+  background-color: #CFE5FF;
+}
+
+.bottom--content {
+  position: relative;
+}
+
+.footer_container {
+  display: flex;
+  background-color: #111827;
+  height: 160px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_item {
+  padding-bottom: 60px;
+}
