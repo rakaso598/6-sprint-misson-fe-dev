@@ -1,16 +1,17 @@
-import { FavoriteProductList, RecentProductList } from "./components/ProductApi.jsx"
+import { FavoriteProductList, RecentProductList } from "./components/ProductList.jsx"
 import "./App.css";
 
 function App() {
 
   return (
     <>
+      <h2>베스트 순 정렬</h2>
       <div className="favoriteProductList">
-        <h2>베스트 순 정렬</h2>
+
         <FavoriteProductList />
       </div>
+      <h2>최근 순 정렬</h2>
       <div className="recentProductList">
-        <h2>최근 순 정렬</h2>
         <RecentProductList />
       </div>
 

@@ -40,7 +40,7 @@ export const FavoriteProductList = () => {
   useEffect(() => {
     const fetchProductList = async () => {
       try {
-        const productListResponse = await getProductList(1, 10, 'favorite');
+        const productListResponse = await getProductList(1, 4, 'favorite');
         setProductList(productListResponse);
       } catch (err) {
         console.error(err);

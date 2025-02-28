@@ -1,0 +1,25 @@
+.favoriteProductList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recentProductList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.favoriteProductList > div {
+  width: 20%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.recentProductList > div {
+  width: 20%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
